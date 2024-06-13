@@ -4,7 +4,7 @@
 // Play 5 rounds and declare a winner
 
 function playGame() {
-    alert(`Welcome! You are going to play 5 rounds of 'rock, paper, scissors' against the computer. Each round's winner and the running score will be displayed in the console. Good luck!`)
+    alert(`Welcome! You are going to play 5 rounds of 'rock, paper, scissors' against the computer. Each round's winner and the running score will be displayed after each round. Good luck!`)
 
     let humanScore = 0;
     let computerScore = 0;
@@ -40,40 +40,41 @@ function playGame() {
     }
 
     function playRound (humanChoice, computerChoice) {
+        let message;
         if (computerChoice === 'rock') {
             if (humanChoice === 'rock') {
-                console.log('Computer selected \'rock\'. Tie! No winner for this round.');
+                message = 'Computer selected \'rock\'. Tie! No winner for this round.';
             } else if (humanChoice === 'paper') {
-                console.log('Computer selected \'rock\'. Paper beats rock; you win this round!');
+                message = 'Computer selected \'rock\'. Paper beats rock; you win this round!';
                 ++humanScore;
             } else {
-                console.log('Computer selected \'rock\'. Rock beats scissors; you lose this round!');
+                message = 'Computer selected \'rock\'. Rock beats scissors; you lose this round!';
                 ++computerScore;
             }
         }
         else if (computerChoice === 'paper') {
             if (humanChoice === 'paper') {
-                console.log('Computer selected \'paper\'. Tie! No winner for this round.');
+                message = 'Computer selected \'paper\'. Tie! No winner for this round.';
             } else if (humanChoice === 'scissors') {
-                console.log('Computer selected \'paper\'. Scissors beats paper; you win this round!');
+                message = 'Computer selected \'paper\'. Scissors beats paper; you win this round!';
                 ++humanScore;
             } else {
-                console.log('Computer selected \'paper\'. Paper beats rock; you lose this round!');
+                message = 'Computer selected \'paper\'. Paper beats rock; you lose this round!';
                 ++computerScore;
             }
         }    
         else {
             if (humanChoice === 'scissors') {
-                console.log('Computer selected \'scissors\'. Tie! No winner for this round.');
+                message = 'Computer selected \'scissors\'. Tie! No winner for this round.';
             } else if (humanChoice === 'rock') {
-                console.log('Computer selected \'scissors\'. Rock beats scissors; you win this round!');
+                message = 'Computer selected \'scissors\'. Rock beats scissors; you win this round!';
                 ++humanScore;
             } else {
-                console.log('Computer selected \'scissors\'. Scissors beats paper; you lose this round!');
+                message = 'Computer selected \'scissors\'. Scissors beats paper; you lose this round!';
                 ++computerScore;
             }
         }
-        console.log(`Your Score: ${humanScore} Computer Score: ${computerScore}`)
+        alert(`${message} \nYour Score: ${humanScore} Computer Score: ${computerScore}`)
     }
 
     let computerSelection = getComputerChoice();
@@ -92,18 +93,19 @@ function playGame() {
     humanSelection = getHumanChoice();
     playRound(humanSelection, computerSelection);
 
-    console.log(`GAME OVER`);
-
-    if (computerScore === humanScore) {
-        console.log(`Tie game! No winners or losers this time.`);
-    } else if (computerScore < humanScore) {
-        console.log(`You win! Congratulations!`)
-    } else {
-        console.log(`You lose! Better luck next time.`)
+    function result() {
+        let winner;
+        if (computerScore === humanScore) {
+            winner = `Tie game! No winners or losers this time.`;
+        } else if (computerScore < humanScore) {
+            winner = `You win! Congratulations!`;
+        } else {
+            winner = `You lose! Better luck next time.`;
+        }
+        return winner;
     }
 
-    console.log(`Final Score: \nYour Score: ${humanScore} Computer Score: ${computerScore}`);
+    alert(`GAME OVER \n${result()} \nYour Score: ${humanScore} Computer Score: ${computerScore}`);
+
 }
-
-
 playGame();
