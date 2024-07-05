@@ -107,5 +107,4 @@ function playGame() {
 
     alert(`GAME OVER \n${result()} \nYour Score: ${humanScore} Computer Score: ${computerScore}`);
 
-}
-playGame();
+};

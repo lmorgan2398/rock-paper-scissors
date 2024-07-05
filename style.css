@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url(./MinecraftRegular-Bmg3.otf)
+}
+
+* {
+    font-family: 'Minecraft';
+    color: yellow;
+    font-weight: 500;
+}
+
+body {
+    background-image: url(minecraft-stone-pattern.jpg);
+}
+
+.header {
+    margin: 24px auto;
+}
+
+.header-title {
+    font-size: 64px;
+    text-align: center;
+    margin: 16px auto 0px;
+    color: aqua;
+}
+
+.header-author {
+    font-size: 32px;
+    text-align: center;
+    margin: 0px auto;
+    color: cyan;
+}
+
+.instructions-and-score {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.instructions {
+    width: 500px;
+    font-size: 24px;
+}
+
+.score {
+    width: 400px;
+    height: 200px;
+    background-image: url(oak-plank.png);
+    background-size: contain;
+}
+
+.sign {
+    margin: 8px auto;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
