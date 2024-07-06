@@ -70,12 +70,18 @@ body {
     color: red;
 }
 
+.round-number {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .playing-cards-and-versus {
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .player-card,
@@ -125,8 +131,18 @@ body {
     height: 132px;
 }
 
+.player-choice-img-container,
+.computer-choice-img-container {
+    height: 132px;
+    width: 132px;
+    background-image: url(item-frame.png);
+    background-size: 100%;
+}
+
 .player-choice-img,
 .computer-choice-img {
+    background-image: url(item-frame.png);
+    background-size: 100%;
     height: 132px;
     width: 132px;
 }
@@ -179,6 +195,11 @@ body {
     margin: 0px;
 }
 
+.round-information {
+    font-size: 20px;
+    margin-top: 32px;
+}
+
 .play-round-button,
 .next-round-button {
     background-image: url(quartz.webp);
@@ -186,7 +207,7 @@ body {
     font-size: 28px;
     color: red;
     padding: 8px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .reset-button {
