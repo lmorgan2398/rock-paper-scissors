@@ -62,6 +62,14 @@ body {
     color: white;
 }
 
+.player-score {
+    color: green;
+}
+
+.computer-score {
+    color: red;
+}
+
 .playing-cards-and-versus {
     display: flex;
     justify-content: center;
@@ -171,11 +179,21 @@ body {
     margin: 0px;
 }
 
+.play-round-button,
+.next-round-button {
+    background-image: url(quartz.webp);
+    background-size: 10%;
+    font-size: 28px;
+    color: red;
+    padding: 8px;
+    margin-top: 50px;
+}
+
 .reset-button {
     background-image: url(lava.webp);
     background-size: 30%;
     font-size: 28px;
     color: black;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 50px;
 }
