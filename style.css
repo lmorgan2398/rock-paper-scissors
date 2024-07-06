@@ -198,6 +198,7 @@ body {
 .round-information {
     font-size: 20px;
     margin-top: 32px;
+    color: yellow;
 }
 
 .play-round-button,

@@ -133,6 +133,8 @@ playRoundButton.addEventListener('click', () => {
         } else {
             let timeleft = 6;
             let roundTimer = setInterval(function(){
+                resetButton.addEventListener('click', () => {
+                    clearInterval(roundTimer)});
                 --timeleft;
                 roundNumberText.textContent = `Next round in ${timeleft}...`;
                 if(timeleft === 0) {
@@ -192,5 +194,11 @@ resetButton.addEventListener('click', () => {
     playerScoreText.textContent = `Your Score: ${playerScore}`;
     computerScoreText.textContent = `Nitwit's Score ${computerScore}`;
 
+    rockButton.disabled = false;
+    paperButton.disabled = false;
+    shearsButton.disabled = false;
+    playRoundButton.disabled = false;
 
+    roundInformation.textContent = `Hit the 'play round' button once you have made your selection!`;
+    roundInformation.style.color = 'yellow';
 });
