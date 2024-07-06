@@ -37,9 +37,10 @@ body {
 .instructions-and-score {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 50px;
     align-items: center;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .instructions {
