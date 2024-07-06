@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(minecraft-stone-pattern.jpg);
+    background-image: url(images/minecraft-stone-pattern.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,7 +50,7 @@ body {
 .score {
     width: 400px;
     height: 200px;
-    background-image: url(oak-plank.png);
+    background-image: url(images/oak-plank.png);
     background-size: contain;
     /* border: 1px solid black; */
 }
@@ -88,7 +88,7 @@ body {
 .computer-card {
     height: 373px;
     width: 275px;
-    background-image: url(obsidian-pattern.jpg);
+    background-image: url(images/obsidian-pattern.jpg);
     background-size: 25%;
     display: flex;
     flex-direction: column;
@@ -135,13 +135,13 @@ body {
 .computer-choice-img-container {
     height: 132px;
     width: 132px;
-    background-image: url(item-frame.png);
+    background-image: url(images/item-frame.png);
     background-size: 100%;
 }
 
 .player-choice-img,
 .computer-choice-img {
-    background-image: url(item-frame.png);
+    background-image: url(images/item-frame.png);
     background-size: 100%;
     height: 132px;
     width: 132px;
@@ -159,7 +159,7 @@ body {
 .rock-button,
 .paper-button,
 .shears-button {
-    background-image: url(oak-plank.png);
+    background-image: url(images/oak-plank.png);
     background-size: 50%;
     padding: 0px;
     width: 80px;
@@ -174,7 +174,7 @@ body {
 }
 
 .emerald-button {
-    background-image: url(cobble.webp);
+    background-image: url(images/cobble.webp);
     background-size: 50%;
     width: 80px;
     height: 80px;
@@ -189,7 +189,7 @@ body {
 .shears-button-text {
     font-size: 18px;
     margin: 2px auto;
-    background-image: url(cobble.webp);
+    background-image: url(images/cobble.webp);
     background-size: 50%;
     padding: 0px 4px 0px 4px;
     margin: 0px;
@@ -203,7 +203,7 @@ body {
 
 .play-round-button,
 .next-round-button {
-    background-image: url(quartz.webp);
+    background-image: url(images/quartz.webp);
     background-size: 10%;
     font-size: 28px;
     color: red;
@@ -212,7 +212,7 @@ body {
 }
 
 .reset-button {
-    background-image: url(lava.webp);
+    background-image: url(images/lava.webp);
     background-size: 30%;
     font-size: 28px;
     color: black;

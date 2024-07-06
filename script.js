@@ -31,21 +31,21 @@ let shearsButton = document.querySelector('.shears-button');
 rockButton.addEventListener('click', () => {
     playerChoice.textContent = 'Rock';
     playerSelection = 'rock';
-    playerChoiceImage.src = "stone.webp";
+    playerChoiceImage.src = "images/stone.webp";
     playerChoiceImage.style.display = 'inline';
 });
 
 paperButton.addEventListener('click', () => {
     playerChoice.textContent = 'Paper';
     playerSelection = 'paper';
-    playerChoiceImage.src = "paper.webp";
+    playerChoiceImage.src = "images/paper.webp";
     playerChoiceImage.style.display = 'inline';
 });
 
 shearsButton.addEventListener('click', () => {
     playerChoice.textContent = 'Shears';
     playerSelection = 'shears';
-    playerChoiceImage.src = "shears.webp";
+    playerChoiceImage.src = "images/shears.webp";
     playerChoiceImage.style.display = 'inline';
 });
 
@@ -78,7 +78,7 @@ playRoundButton.addEventListener('click', () => {
             computerChoice.textContent = `${computerChoiceTextUppercase}`;
 
             if (computerSelected === 'rock') {
-                computerChoiceImage.src = "stone.webp";
+                computerChoiceImage.src = "images/stone.webp";
                 computerChoiceImage.style.display = 'inline';
                 if (playerSelected === 'rock') {
                     roundInformation.textContent = 'Nitwit selected \'rock\'. Tie! No winner for this round.';
@@ -91,7 +91,7 @@ playRoundButton.addEventListener('click', () => {
                 }
             }
             else if (computerSelected === 'paper') {
-                computerChoiceImage.src = "paper.webp";
+                computerChoiceImage.src = "images/paper.webp";
                 computerChoiceImage.style.display = 'inline';
                 if (playerSelected === 'paper') {
                     roundInformation.textContent = 'Nitwit selected \'paper\'. Tie! No winner for this round.';
@@ -104,7 +104,7 @@ playRoundButton.addEventListener('click', () => {
                 }
             }    
             else {
-                computerChoiceImage.src = "shears.webp";
+                computerChoiceImage.src = "images/shears.webp";
                 computerChoiceImage.style.display = 'inline';
                 if (playerSelected === 'shears') {
                     roundInformation.textContent = 'Nitwit selected \'shears\'. Tie! No winner for this round.';
