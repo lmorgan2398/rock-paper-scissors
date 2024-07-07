@@ -51,24 +51,23 @@ body {
 .score {
     width: 400px;
     height: 200px;
-    background-image: url(images/oak-plank.png);
-    background-size: contain;
-    /* border: 1px solid black; */
+    background-image: url(images/oak-signwebp);
+    background-size: 76%;
 }
 
 .sign {
     margin: 8px auto;
     text-align: center;
     font-size: 32px;
-    color: white;
+    color: black;
 }
 
 .player-score {
-    color: green;
+    color: black;
 }
 
 .computer-score {
-    color: red;
+    color: black;
 }
 
 .round-number {

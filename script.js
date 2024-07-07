@@ -131,7 +131,7 @@ playRoundButton.addEventListener('click', () => {
             roundInformation.textContent = `Game Over! You win. Congratulations!`
             roundInformation.style.color = 'greenyellow';
         } else {
-            let timeleft = 6;
+            let timeleft = 4;
             let roundTimer = setInterval(function(){
                 resetButton.addEventListener('click', () => {
                     clearInterval(roundTimer)});
